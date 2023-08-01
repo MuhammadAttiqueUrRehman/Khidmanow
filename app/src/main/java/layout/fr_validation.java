@@ -138,10 +138,10 @@ public class fr_validation extends Fragment implements AsyncResponse {
         btnresendcode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                myDB.showToast(requireContext(), "clicked");
+                //myDB.showToast(requireContext(), "clicked");
                 tv_timer.setVisibility(View.VISIBLE);
                 btnresendcode.setVisibility(View.GONE);
-                new CountDownTimer(30000, 1000) {
+                new CountDownTimer(180000, 1000) {
 
                     public void onTick(long millisUntilFinished) {
                         tv_timer.setText(getString(R.string.resend_otp_in_seconds1, millisUntilFinished / 1000));
