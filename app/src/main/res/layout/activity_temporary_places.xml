@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TemporaryPlacesActivity">
+
+    <LinearLayout
+        android:id="@+id/mid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <!--        <AutoCompleteTextView-->
+        <!--            android:hint="Search Location"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:id="@+id/autocomplete" />-->
+
+        <fragment
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            android:id="@+id/autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_below="@id/autocomplete_fragment"
+            android:id="@+id/btnnext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorButton"
+            android:text="SET LOCATION"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btnnext">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtaddress"
+                android:hint="Enter Address"
+                android:padding="16dp"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/ic_location"
+                android:gravity="center_vertical"
+                android:background="@android:drawable/editbox_background" />
+
+            <ImageView
+                android:id="@+id/pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_person_pin" />
+        </fragment>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar20"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:elevation="5dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

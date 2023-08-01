@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    tools:context="layout.fr_product_detail">
+
+
+    <include
+        android:id="@+id/tbActivityMain"
+        layout="@layout/toolbarsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerVertical="true" />
+
+
+    <ImageButton
+        android:id="@+id/imageclose"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tbActivityMain"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left|top"
+        android:background="@null"
+        android:src="@drawable/ico_cross"
+        android:tint="@color/white" />
+
+
+    <ScrollView
+        android:id="@+id/accscroll"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:layout_below="@id/tbActivityMain"
+        android:layout_marginTop="0dp"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/logpart2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageDet"
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:scaleType="center"
+                android:src="@drawable/haal_meer_large" />
+
+            <TextView
+                android:id="@+id/itemnamenorm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/imageDet"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unitprice"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/itemnamenorm"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/itemnamedet"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/unitprice"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:lineSpacingMultiplier="1.3"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12dp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/itemnamedet"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageButton
+                    android:id="@+id/minusd"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="@layout/round_corner_image_button"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/ic_tab_minus_green"
+                    android:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/numqtyd"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/plusd"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@layout/round_corner_image_button"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/ic_tab_plus_green"
+                    android:tint="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/itemnamedet"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageButton
+                    android:id="@+id/btncart"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="@color/colorButton"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/ic_tab_shoppingcart"
+                    android:tint="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar5"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+</RelativeLayout>

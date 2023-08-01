@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/listll"
+    android:background="@color/white">
+
+    <RadioButton
+        android:id="@+id/questcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorTextDark"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/optionvalue"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:text=""
+        android:visibility="invisible"/>
+</RelativeLayout>

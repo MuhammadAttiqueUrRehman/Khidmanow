@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="layout.fr_book_addinfo">
+
+    <include
+        android:id="@+id/tbActivityMain"
+        layout="@layout/toolbarsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/v_steps"
+        layout="@layout/steps"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/tbActivityMain"
+        android:layout_marginTop="8dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonplace"
+        android:layout_below="@id/v_steps"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        card_view:cardCornerRadius="0dp"
+        card_view:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/label1"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/provide_additional_info"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorTextDark"
+                android:textSize="10dp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/txtAddinfo"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@id/label1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:background="#f1f1f1"
+                android:gravity="start"
+                android:padding="3dp"
+                android:textColor="@color/colorTextDark"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/label2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/txtAddinfo"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:padding="3dp"
+                android:text="@string/take_pictures"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorTextDark"
+                android:textSize="10dp"
+                android:textStyle="normal" />
+
+
+            <LinearLayout
+                android:id="@+id/imageplace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label2"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageButton
+                    android:id="@+id/camera1"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight=".5"
+                    android:backgroundTint="@color/white"
+                    android:padding="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/camera_logo" />
+
+                <ImageButton
+                    android:id="@+id/camera2"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight=".5"
+                    android:backgroundTint="@color/white"
+                    android:padding="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/camera_logo" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imageplace1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageplace"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+                <ImageButton
+                    android:id="@+id/camera3"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight=".5"
+                    android:backgroundTint="@color/white"
+                    android:padding="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/camera_logo" />
+
+                <ImageButton
+                    android:id="@+id/camera4"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight=".5"
+                    android:backgroundTint="@color/white"
+                    android:padding="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/camera_logo" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/buttonplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnnext"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@color/colorButton"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+</RelativeLayout>

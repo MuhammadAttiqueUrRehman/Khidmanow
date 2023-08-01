@@ -1,0 +1,436 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="layout.fr_homepage">
+
+    <include
+        android:id="@+id/tbActivityMain"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerVertical="false" />
+
+    <ScrollView
+        android:id="@+id/mainscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tbActivityMain">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/appCompatImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_header" />
+
+                <RelativeLayout
+                    android:id="@+id/v_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="64dp"
+                    android:background="@drawable/rounded_white_back">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rounded_search_btn"
+                        android:src="@drawable/ic_action_action_search" />
+                    <!--                    ico_search-->
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/btn_language_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/appCompatImageView3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:lines="1"
+                    android:paddingStart="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="4dp"
+                    android:text=""
+                    android:textColor="@color/bt_blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_notification_head"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_close"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignTop="@+id/tv_noti_text"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="8dp"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/ic_close" />
+
+                    <TextView
+                        android:id="@+id/tv_noti_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/iv_close"
+                        android:paddingStart="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="@string/app_name"
+                        android:textColor="@color/colorTextWhite"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/appCompatImageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@+id/appCompatImageView"
+                    android:background="@null"
+                    app:srcCompat="@drawable/rounded_upper_head" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/label1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="start"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/looking_for_handyman"
+                android:textColor="@color/colorTextDark"
+                android:textSize="14sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:background="@color/white"
+                android:clipToPadding="false"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="4"
+                tools:listitem="@layout/card_list" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--                android:layout_below="@+id/tbActivityMain"-->
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:id="@+id/dotspanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pager"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/label2a"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="BOOKINGS &amp; RESERVATIONS"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recycler1a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label2a"
+                android:background="@color/white"
+                android:clipToPadding="false"
+                android:orientation="horizontal" />
+
+
+            <TextView
+                android:id="@+id/label2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="MAINTENANCE SERVICES"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recycler1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label2"
+                android:background="@color/white"
+                android:clipToPadding="false"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/label3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/my_recycler1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="CLEANING SERVICES"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recycler2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label3"
+                android:background="@color/white"
+                android:clipToPadding="false"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/label4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/my_recycler2"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="CAR AND BIKE"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recycler3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label4"
+                android:background="@color/white"
+                android:clipToPadding="false"
+                android:orientation="horizontal" />
+
+
+            <TextView
+                android:id="@+id/label5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/my_recycler3"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="BEAUTY AND HEALTH"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recycler4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label5"
+                android:background="@color/white"
+                android:clipToPadding="false"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/label6"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/my_recycler4"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="APPLIANCES REPAIR"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recycler5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label6"
+                android:background="@color/white"
+                android:clipToPadding="false"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/label7"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/my_recycler5"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="PACKERS AND MOVERS"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recycler6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label7"
+                android:background="@color/white"
+                android:clipToPadding="false"
+                android:orientation="horizontal" />
+
+
+            <TextView
+                android:id="@+id/label8"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/my_recycler6"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="HOME IMPROVEMENT"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recycler7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label8"
+                android:background="@color/white"
+                android:clipToPadding="false"
+                android:orientation="horizontal" />
+
+
+            <TextView
+                android:id="@+id/label9"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/my_recycler7"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="EVENTS AND HOLIDAYS"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recycler8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label9"
+                android:background="@color/white"
+                android:clipToPadding="false"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/label10"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/my_recycler8"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="TUTORS AND PRIESTS"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recycler9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label10"
+                android:background="@color/white"
+                android:clipToPadding="false"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/label11"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/my_recycler9"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="BUSINESS AND TAXATION"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recycler10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label11"
+                android:background="@color/white"
+                android:clipToPadding="false"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/label12"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/my_recycler10"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="MAINTENANCE PACKAGES"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recycler11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label12"
+                android:background="@color/white"
+                android:clipToPadding="false"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_whatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_call_what"
+        app:maxImageSize="48dp" />
+</RelativeLayout>

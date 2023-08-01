@@ -1,0 +1,766 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:background="@color/white"
+    tools:context="layout.fr_account">
+
+    <ScrollView
+        android:id="@+id/accscroll"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:background="@color/colorPrimary"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/logpart2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/loginpart2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/colorButton"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="8dp"
+                    tools:ignore="RtlSymmetry">
+
+                    <ImageButton
+                        android:id="@+id/btnlogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_login"
+                        android:tint="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_language_toggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="@color/colorButton"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|top"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ico_logout" />
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profileimage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/haal_meer_large"
+                    app:civ_border_color="@color/colorAccent" />
+
+
+                <TextView
+                    android:id="@+id/txtusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="@string/tap_lock_on_top_left_to_login"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/loginpart3"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnorderhistory"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@layout/round_corner_image_button_main"
+                        android:backgroundTint="#f44336"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_bookinghistory"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lblorderhistory"
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="@string/booking_history"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10dp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/btnrewards"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@layout/round_corner_image_button_main"
+                        android:backgroundTint="#e91e63"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_wallet"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lblrewards"
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="@string/my_wallet"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/btnredeemcoupon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@layout/round_corner_image_button_main"
+                        android:backgroundTint="#9c27b0"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_voucher"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lblredeemcoupon"
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/my_vouchers"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10dp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnmessage"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@layout/round_corner_image_button_main"
+                        android:backgroundTint="#673ab7"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_bell"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lblmessage"
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/my_notifications"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10dp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/loginpart4"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@id/loginpart3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/line11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnprofile"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@layout/round_corner_image_button_main"
+                        android:backgroundTint="#3f51b5"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_profile"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lblprofile"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/change_profile"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnchangepin"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@layout/round_corner_image_button_main"
+                        android:backgroundTint="#2196f3"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_pin"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lblchangepin"
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/change_pin"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10dp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnsettings"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@layout/round_corner_image_button_main"
+                        android:backgroundTint="#0276aa"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_setting"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lblsettings"
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/settings"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btncontactus"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@layout/round_corner_image_button_main"
+                        android:backgroundTint="#00bcd4"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_call"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lblcontactus"
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/contact_us"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/loginpart5"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@id/loginpart4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:id="@+id/line21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/btnrefer"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@layout/round_corner_image_button_main"
+                        android:backgroundTint="#607d8b"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_refer"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lblrefer"
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/ref_dashboard"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnfaq"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@layout/round_corner_image_button_main"
+                        android:backgroundTint="#4caf50"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_faq"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lblfaq"
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/f_a_q"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnversion"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@layout/round_corner_image_button_main"
+                        android:backgroundTint="#cddc39"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_about"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lblversion"
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/about_us"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btntandc"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@layout/round_corner_image_button_main"
+                        android:backgroundTint="#ffeb3b"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_tandc"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lbltandc"
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/t_amp_c"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/loginpart6"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@id/loginpart5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/line31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnrefundterms"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@layout/round_corner_image_button_main"
+                        android:backgroundTint="#ffc107"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_refund"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lblrefund"
+                        android:layout_width="75dp"
+                        android:layout_height="25dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/refund_policy"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btndataprivacy"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@layout/round_corner_image_button_main"
+                        android:backgroundTint="#b23c17"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_dataprivacy"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lbldp"
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/data_privacy"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnfeedback"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@layout/round_corner_image_button_main"
+                        android:backgroundTint="#009688"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_feedback"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lblfeedback"
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/feedback"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10dp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnreferral"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@layout/round_corner_image_button_main"
+                        android:backgroundTint="#f9aa33"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_refbenefit"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lblreferral"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/referral_benefits"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar13"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+

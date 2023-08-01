@@ -1,0 +1,2 @@
+include ':app', ':jettison-1.3.3', ':PayTabs_SDK', ':paytabs_sdk-v4.0.0'
+include ':libs:picasso-master'

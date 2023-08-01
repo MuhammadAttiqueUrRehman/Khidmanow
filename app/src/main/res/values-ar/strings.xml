@@ -1,0 +1,318 @@
+<resources>
+
+
+    <string name="app_title">خدمة ناو ، دبي</string>
+
+    <string name="Rs">درهم</string>
+
+    <!-- Logni Screen -->
+    <string name="or">أو</string>
+    <string name="login_with_primary_mobile">الدخول عن طريق رقم الموبايل</string>
+    <string name="_4_digit_pin">كلمة المرور المكونة من 4 أرقام</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="help_i_ve_forgotten_my_pin">يرجى المساعدة، لقد نسيت كلمة المرور!</string>
+    <string name="register">سجل الآن</string>
+    <string name="skip_for_now">ليس الآن</string>
+    <string name="ver_1_0" translatable="false">Ver 2.01</string>
+    <!-- fr_register Screen -->
+    <string name="first_name">الإسم الأول</string>
+    <string name="last_name">اسم العائلة</string>
+    <string name="mobile_number_91xxxxxxxxxx">رقم الهاتف (971xxxxxxxxxx)</string>
+    <string name="email_address">البريد الإلكتروني</string>
+    <string name="new_4_digit_pin">أدخل 4 أرقام جديدة</string>
+    <string name="all_fields_are_required">* جميع الحقول مطلوبة</string>
+    <string name="accept_terms_amp_conditions">لقد قرأت الشروط والأحكام وأوافق عليها</string>
+    <string name="continue_">استمر</string>
+    <string name="thank_you">شكراً لك</string>
+    <string name="thanks_for_login_via_facebook">شكراً لتسجيل الدخول عبر الفيسبوك</string>
+    <string name="delete_account">حذف الحساب</string>
+    <string name="this_action_will_delete_the_account_and_all_transactions_related_to_account">سيؤدي هذا الإجراء إلى حذف الحساب وجميع المعاملات المتعلقة بالحساب. انقر فوق "موافق" للمتابعة أو "إلغاء" لإلغاء هذا الإجراء</string>
+    <string name="please_enter_6_digit_sms_code">يرجى إدخال الرمز الوارد إليك عبر الرسائل النصية والمكون من 6 أرقام</string>
+    <string name="_6_digit_sms_code">الرمز المكون من 6 أرقام</string>
+    <string name="validate">التحقق</string>
+    <string name="resend_validation_code">إعادة إرسال رمز التحقق</string>
+
+    <string name="the_customer_account_has_been_deleted_successfully">تم حذف حساب العميل بنجاح</string>
+
+    <string name="looking_for_handyman">هل تبحث عن خدمات الأعمال اليدوية وخدمات أخرى عديدة؟</string>
+
+    <string name="details">التفاصيل</string>
+    <string name="pricing">الأسعار</string>
+    <string name="inclusions">يشمل ما يلي</string>
+
+    <string name="provide_additional_info">يرجى إضافة معلومات أخرى (اختياري)</string>
+    <string name="take_pictures">إلتقط بعض الصور لمساعدة الفني في تقييم المشكلة</string>
+    <string name="next">التالي</string>
+
+    <string name="which_address">في أي عنوان أو موقع تحتاج الخدمة؟ يرجى تحديد الموقع.</string>
+    <string name="register_address">أحتاج الخدمة في الموقع المسجل سابقاً</string>
+    <string name="select_location">أحتاج الخدمة في موقع جديد</string>
+
+    <string name="address_landmark">عنوان أو معلم معروف/رقم الشقة/الطابق</string>
+    <string name="select_appointment_slot">أختر التوقيت الأنسب لك</string>
+    <string name="checkout">الدفع</string>
+    <string name="service_requirements">متطلبات الخدمة</string>
+    <string name="confirm_booking">تأكيد الطلب</string>
+    <string name="no_items">لا يوجد أي عناصر في سلة التسوق</string>
+    <string name="book_a_service">أطلب الخدمة</string>
+    <!--    <string name="home">الصفحة الرئيسية</string>-->
+    <string name="home">الرئيسية</string>
+    <string name="offers">العروض</string>
+    <string name="my_orders">طلباتي</string>
+    <string name="products">المنتجات</string>
+    <!--    <string name="account">الحساب الشخصي</string>-->
+    <string name="account">حسابي</string>
+
+    <string name="language_name">English</string>
+
+    <!--    <string name="booking_history">تفاصيل الطلبات</string>-->
+    <string name="booking_history">تفاصيل الطلبات</string>
+    <string name="my_wallet">محفظتي</string>
+    <string name="my_vouchers">مكافآتي</string>
+    <string name="my_notifications">تنبيهاتي</string>
+    <string name="change_profile">تعديل الحساب الشخصي</string>
+    <string name="change_pin">تغيير كلمة المرور</string>
+    <string name="settings">الإعدادات</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="ref_dashboard">عرض مشاركاتي</string>
+    <string name="f_a_q">الأسئلة المتكررة</string>
+    <string name="about_us">من نحن</string>
+    <string name="t_amp_c">الشروط والأحكام</string>
+    <string name="refund_policy">سياسة الإسترداد</string>
+    <string name="data_privacy">خصوصية البيانات</string>
+    <string name="feedback">تقييمي للخدمة</string>
+    <string name="referral_benefits">فوائد مشاركة التطبيق مع الآخرين</string>
+    <string name="allow_notifications">تفعيل التنبيهات</string>
+    <string name="receive_newsletter">تلقي النشرة الإخبارية ورسائل الشركاء</string>
+    <string name="receive_offer">تلقي العروض بواسطة الرسائل النصية من خدمة ناو وشركائها</string>
+    <string name="save_settings">حفظ الإعدادات</string>
+    <string name="settings_acknoeled">الإعلام بتغيير الإعدادات</string>
+    <string name="settings_changed">تم تغيير الإعدادات بنجاح</string>
+    <string name="title">عنوان</string>
+    <string name="message">رسالة</string>
+    <string name="balance">الرصيد المتبقي</string>
+    <string name="no_transaction">لا يوجد أي تعاملات ضمن محفظتي</string>
+
+    <string name="no_bookings">لا توجد طلبات متاحة حالياً</string>
+
+    <string name="please_enter_current_4_digit_pin">يرجى إدخال كلمة المرور المكونة من 4 أرقام</string>
+    <string name="current_4_digit_pin">كلمة المرور الحالية المكونة من 4 أرقام</string>
+
+    <string name="reset_pin">إعادة تعيين كلمة المرور</string>
+    <string name="please_set_a_new_4_digit_pin">يرجى إدخال كلمة المرور الجديدة المكونة من 4 أرقام</string>
+    <string name="save_pin">حفظ كلمة المرور</string>
+    <string name="new_pin_set">تم إعادة تعيين كلمة المرور بنجاح</string>
+    <string name="there_are_no_messages">لا يوجد أي رسائل حالياً، يرجى المحاولة لاحقاً</string>
+    <string name="offer_vouchers">العروض وقسائم المشتريات</string>
+    <string name="offer_lookup">البحث عن العروض</string>
+    <string name="voucher_lookup">البحث عن قسائم المشتريات</string>
+    <string name="terms_conditions">الشروط والأحكام</string>
+    <string name="save">حفظ</string>
+    <string name="edit_image">تغيير صورة الحساب</string>
+    <string name="mobile">الهاتف المحمول</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+    <string name="not_disclosed">غير معرف</string>
+    <string name="select_geolocation">حدد موقعك الجغرافي</string>
+    <string name="referral_benifits">فوائد مشاركة التطبيق مع الآخرين</string>
+    <string name="privacy_policy">سياسة السرية</string>
+    <string name="refferel_dash">عرض مشاركاتي</string>
+    <string name="referrals">عدد مشاركاتك</string>
+    <string name="transactions_this_month">عدد الطلبات الشهرية</string>
+    <string name="refresh">تحديث</string>
+    <string name="refund_cancellation">سياسة الإسترداد والإلغاء</string>
+    <string name="khidmanow_rating">تقييم خدمة ناو</string>
+    <string name="khidmanow_faq">الأسئلة المتكررة لخدمة ناو</string>
+    <string name="please_rate_your_experience_with_the_khidmanow">يرجى تقييم تجربتك مع تطبيق خدمة ناو</string>
+    <string name="send_feedback">إرسال تقييمي للخدمة</string>
+    <string name="i_want_to_provide">عفوًا، أرغب بتقييم مزود الخدمة</string>
+    <string name="deals_and_offers">الصفقات والعروض</string>
+    <string name="booking_timeline">تفاصيل الطلبات</string>
+    <string name="shop_mater">شراء المواد</string>
+    <string name="tap_lock_on_top_left_to_login">اضغط على القفل في أعلى اليمين لتسجيل الدخول</string>
+    <string name="hourly">بالساعة</string>
+    <string name="fixed">ثابت</string>
+    <string name="assesment">التقييم</string>
+    <string name="voucher_detail">تفاصيل القسيمة</string>
+    <string name="there_are_no_items_currently">لا يوجد أي عروض أو قسائم حالياً، يرجى المحاولة لاحقاً</string>
+
+    <string name="easy_and_economical">سهل وذو قيمة اقتصادية</string>
+    <string name="book_our_services_in_the_easiest_way_possible_relax_and_let_our_trusted_service_providers_complete_the_task">إبدأ بطلب أي من خدماتنا وبأسهل طريقة ممكنة.استرح في منزلك ودع فريق عملنا القيام بإنجاز طلباتك</string>
+
+    <string name="privileged_customer_care">رعاية مميزة للعملاء</string>
+    <string name="calling_is_more_easier_we_also_have_a_call_center_to_take_service_orders">إذا كان الاتصال أكثر سهولة لك. فهناك مركز اتصال متخصص لاستقبال طلباتك</string>
+
+    <string name="great_offers">عروض مثيرة كبرى</string>
+    <string name="exciting_offers_available_for_service_bookings">عروض ومكافآت لمختلف الخدمات</string>
+
+    <string name="earn_money">مكافآت نقدية</string>
+    <string name="we_pay_cash_for_every_successful_order_from_your_referral_tell_a_friend_and_be_rewarded">يمكنك الحصول على مكافأة نقدية فور إنجاز الخدمة لأحد المشتركين المسجلين عن طريقك. أخبر أهلك وأصدقائك الآن وابدأ بحصد المكافآت</string>
+
+    <string name="quality_services">خدمات عالية الجودة</string>
+    <string name="we_offer_reliable_services_and_trustworthy_workmanship_we_want_what_is_right_for_you">نقدم خدمات موثوقة وعمالة محترفة فنحن لا نرضى لك إلا بالأفضل</string>
+
+    <string name="you_need_to_set_your_location_so_that_our_service_providers_can_find_you_easily">من المهم أن تقوم بتحديد موقعك لكي يتمكن مزودي خدماتنا من الوصول إليك بسهولة</string>
+
+    <string name="your_device_location">يبدو أن خاصية تحديد المواقع بجهازك غير مفعلة. يرجى تفعيل خاصية تحديد الموقع للاستفادة من تطبيق خدمة ناو. هل تريد تفعيل هذه الخاصية الآن؟</string>
+    <string name="select_requirements">إختر متطلبات الخدمة</string>
+    <string name="verify_order">تحقق من الأمر</string>
+    <string name="booking_confirmation">تأكيد الطلب</string>
+    <string name="your_booking">طلبك رقم</string>
+    <string name="placed_sucessfully">تم تسجيله بنجاح بتاريخ</string>
+    <string name="a_vendor_will">وسيقوم مزود الخدمة بالتواصل معك لتأكيد الموقع قبل الزيارة في الوقت الذي تم تحديده من قبلك. في حال تم الدفع مسبقاً فسيتم تسوية الدفعات بعد إنجاز الخدمة</string>
+
+    <string name="skip">تخطى</string>
+    <string name="selection_visit_booking_vendor_location">إختيار الزيارة/الطلب/موقع مزود الخدمة</string>
+    <string name="proceed">استمرار</string>
+    <string name="service_amount">تكلفة الخدمة</string>
+    <string name="apply_voucher_here">أدخل رقم القسيمة هنا</string>
+    <string name="number_of">عدد</string>
+    <string name="vat_5p">الضريبة %5</string>
+    <string name="total_amount">السعر الإجمالي</string>
+
+    <string name="a_visiting_charges">يوجد رسوم زيارة تساوي</string>
+    <string name="plus_vat_should_be">إضافة إلى الضريبة يجب دفعها لمزود الخدمة في حال وصوله إلى الموقع قبل إلغاء الخدمة</string>
+    <string name="the_voucher_discount_will_be">قسائم الخصومات سيتم تحصيلها عند التسوية النهائية للمدفوعات وبعد إنجاز الخدمة. سيتم تقديم بعض الخدمات المجانية كما هي موضحة في تفاصيل الخدمة</string>
+    <string name="price">السعر</string>
+    <string name="total">المجموع</string>
+    <string name="book_now">أطلب الآن</string>
+
+    <string name="the_coupon_number">رقم القسيمة</string>
+    <string name="is_successfullt_redeemed">تم تحصيلها بنجاح وسيتم تعديلها عند الدفع النهائي مقابل الخدمة المنجزة فقط</string>
+
+    <string name="complain">الشكوى</string>
+    <string name="cancel">إلغاء الطلب</string>
+    <string name="vendor">اتصل بمزود الخدمة</string>
+    <string name="otp">رقم التعريف الشخصي لمزود الخدمة</string>
+    <string name="reject">رفض الطلب</string>
+    <string name="close">إنهاء</string>
+
+    <string name="date">التاريخ:</string>
+    <string name="order_ref">مرجع الطلب:</string>
+    <string name="desc">وصف الطلب:</string>
+    <string name="vendor_text">مزود الخدمة:</string>
+    <string name="status">حالة الطلب:</string>
+    <string name="remarks">ملاحظات:</string>
+    <string name="material_cost">تكلفة المواد:</string>
+    <string name="material_vat">ضريبة المواد:</string>
+
+    <string name="otp_validation">التحقق من الرمز</string>
+    <string name="please_enter_4_digit_number_from_vendor">يرجى إدخال  4 أرقام المقدمة لك من مزود الخدمة</string>
+    <string name="_4_digit_permission_code">رمز التصريح المكون من 4 أرقام</string>
+
+    <string name="do_you_want_to_cancel">هل تريد إلغاء هذا الطلب؟</string>
+    <string name="ok">حسناً</string>
+    <string name="cancel_text">لا</string>
+    <string name="offer_detail">تفاصيل العرض</string>
+    <string name="additional_info">معلومات إضافية</string>
+    <string name="destination_address">عنوان الوجهة</string>
+    <string name="invalid_address_landmark">عنوان المعلم غير صحيح أو فارغ</string>
+    <string name="enter_landmark">أدخل معلم معروف، أو رقم الشقة والطابق، لتحديد الموقع.</string>
+    <string name="welcome_you_are_now">أهلاً بك! لقد تم تسجيلك بنجاح في منصة خدمة ناو</string>
+    <string name="welcome">أهلاً بك</string>
+    <string name="registration_confirm">تأكيد التسجيل</string>
+    <string name="complain_acknowledgement">الإعلام باستقبال الشكوى</string>
+    <string name="you_complain_is_logged">تم تسجيل شكواك بنجاح. نأسف للإزعاج وسنقوم بتكليف مزود الخدمة للنظر في المشكلة بأقصى سرعة ممكنة</string>
+    <string name="we_value_your_feedback">نحن نقدر ملاحظاتك وسوف ننظر بالتأكيد في ذلك</string>
+    <string name="vendor_">مزود الخدمة</string>
+    <string name="select_appointment_date">أختر تاريخ موعد الخدمة</string>
+    <string name="booking_cancelled">تم إلغاء الطلب</string>
+    <string name="has_been_cancelled">تم إلغاؤه بناءً على رغبتك</string>
+    <string name="you_have_selected_to_reject">لقد اخترت إلغاء هذا الطلب، يرجى إعلامنا بسبب الإلغاء حتى نتمكن من النظر في المشكلة وتحسين خدماتنا في المستقبل</string>
+    <string name="you_have_selected_to_make_payment">لقد اخترت إجراء الدفع باستخدام بطاقة الائتمان. استمرار؟</string>
+    <string name="you_have_seleted_to_make_payment_using_wallet">لقد اخترت إجراء الدفع باستخدام محفظتك الرقمية في منصة خدمة ناو. استمرار؟</string>
+    <string name="you_have_seleted_payment_cash">لقد اخترت إجراء الدفع نقدًا في وقت لاحق. استمرار؟</string>
+    <string name="camera">الكاميرا</string>
+    <string name="gallery">الصور</string>
+    <string name="profile_changes_acknoled">الإعلام بتعديل الحساب الشخصي</string>
+    <string name="your_profile_changes_">لقد تم تعديل حسابك الشخصي بنجاح</string>
+    <string name="new_picture_saved">تم حفظ الصورة الجديدة بنجاح</string>
+
+    <string name="please_rate_your_experience_with_the_vendor">يرجى تقييم تجربتك مع مزود الخدمة</string>
+    <string name="make_payment">الذهاب إلى صفحة الدفع</string>
+    <string name="complain_hint">يرجى ايضاح المشكلة التي تواجهها بخصوص الخدمة التي تم تقديمها لك مؤخرًا من قبل مزود الخدمة</string>
+    <string name="complain_string">ما هي شكواك؟</string>
+    <string name="enter_few_lines_on_how_was_the_experience_with_the_vendor_were_you_satisfied_with_his_work_will_you_receommend_him_to_others">أدخل تعليقك حول تجربتك مع \nمزود الخدمة ، هل كنت راضيًا عن عمله.\n هل ستوصي به للآخرين.</string>
+    <string name="enter_few_lines_on_how_was_the_experience_with_the_khidmanow_were_you_satisfied_with_his_work_will_you_receommend_him_to_others">أدخل تعليقك حول تجربتك مع تطبيق خدمة ناو وخدماته ، هل كنت راضيًا عن الميزات المتاحة ضمن التطبيق ، هل تريد التوصية بأي وظائف جديدة أو تحسين الوظائف الحالية. سنكون سعداء حتماً لمعرفة رأيك</string>
+    <string name="payment_ref">:مرجع الدفع</string>
+    <string name="thank_you_for_the_order">شكراً لك. لقد تم الدفع بنجاح من محفظتك الرقمية. رصيدك الحالي في المحفظة هو</string>
+    <string name="thank_you_for_the_order_your_payment">شكراً لك. يرجى القيام بالدفع نقداً لمزود الخدمة.</string>
+    <string name="thank_you_for_the_order_your_payment_is">شكراً لك. لقد تم الدفع بنجاح. مرجع الدفع</string>
+    <string name="payment_activity_cancelled">تم إلغاء عملية الدفع</string>
+
+    <string name="activate_voucher">قم بتفعيل القسيمة</string>
+    <string name="i_accept_below_terms_amp_conditions_for_the_offer"><![CDATA[أوافق على الشروط والأحكام المرتبطة بالعرض]]></string>
+    <string name="description">وصف القسيمة:</string>
+    <string name="vendor_rating">تقييم مزود الخدمة</string>
+    <string name="please_enter_few_comments">الرجاء إدخال تقييمك حول تجربتك مع الخدمة المقدمة</string>
+    <string name="payment_complete">تم الدفع</string>
+    <string name="your_complimentary_free">تم تحصيل الخدمة المجانية بنجاح</string>
+    <string name="free_service">خدمة مجانية</string>
+    <string name="offer_activated">تم تحصيل العرض</string>
+    <string name="voucher_no">قسيمة رقم</string>
+    <string name="is_successfully_activited">تم تحويلها بنجاح إلى المحفظة الرقمية الخاصة بك. يمكنك استخدام القسيمة عند الدفع مقابل الخدمة</string>
+    <string name="otp_confirmed">تم تأكيد رقم التعريف الشخصي</string>
+    <string name="you_have_successfully_checked">لقد نجحت في تسجيل الوصول إلى</string>
+    <string name="you_have_successfully_authorized">لقد تم التحقق بنجاح</string>
+    <string name="expiry_date">تاريخ الإنتهاء:</string>
+    <string name="reviews">تقييمي</string>
+    <string name="pay_using_debit_or_credit_card_and_get_warranty_for_the_services">الدفع عن طريق بطاقة الإئتمان/ إدفع بواسطة بطاقة الإئتمان واحصل على ضمان الخدمة</string>
+    <string name="pay_using_khidmanow_wallet_get_more_rewards_and_benefits">الدفع عن طريق المحفظة الرقمية/إدفع بواسطة المحفظة الرقمية واحصل على العديد من المزايا والمكافآت/الرصيد المتبقي: درهم</string>
+    <string name="this_is_a_free_service_and_or_i_will_settle_any_amount_excess_upon_job_completion">إدفع لاحقاً أو خدمة مجانية/هذه خدمة مجانية و/أوسأقوم بتسوية جميع المبالغ المستحقة بعد إنجاز الخدمة</string>
+    <string name="pay_by_credit_card">الدفع بواسطة بطاقة الائتمان</string>
+    <string name="pay_by_wallet">الدفع عن طريق المحفظة الرقمية</string>
+    <string name="pay_later_or_free_service">ادفع لاحقًا أو الخدمة مجانية</string>
+    <string name="payment_could_not_be_completed">تعذر إكمال الدفع، لقد حدث خطأ أثناء تنفيذ عملية الدفع 00. يرجى التحقق من البنك الخاص بك. رمز الخطأ هو</string>
+    <string name="charge_type">نوع التسعير</string>
+    <string name="show_detail">أظهر التفاصيل</string>
+    <string name="item">بند</string>
+    <string name="quantity">العدد</string>
+    <string name="select_a_appointment_time">حدد موعد للخدمة</string>
+    <string name="select_atleast_one">يجب الضغط على أحد الخيارات</string>
+    <string name="you_have_selected_a_past_time">لقد قمت باختيار توقيت غير صحيح. يجب تقديم الطلب قبل 4 ساعات على الأقل</string>
+    <string name="you_have_to_select_appointment">يرجى اختيار التوقيت الأنسب لك %1$d ساعات على الأقل من الآن</string>
+    <string name="hours_in_advance">بعد ساعتين على الأقل من الآن</string>
+    <string name="camera_activity_cancelled">تم إلغاء نشاط الكاميرا</string>
+    <string name="type_of_job">نوع الخدمة؟</string>
+    <string name="unable_to_retrieve_item_list_please_try_again_later">لم نتمكن من استرجاع القائمة. الرجاء معاودة المحاولة في وقت لاحق</string>
+    <string name="please_enter_the_6_digit">الرجاء إدخال رمز التحقق المكون من 6 أرقام الوارد إلى هاتفك المحمول والبريد الإلكتروني</string>
+    <string name="the_validation_has_been_re_sent">تم إعادة إرسال رمز التحقق. يرجى التحقق من الرسالة النصية أو البريد الإلكتروني وإدخال الرمز هنا</string>
+    <string name="create_complain">تقديم شكوى</string>
+    <string name="submit">إرسال</string>
+    <string name="cash_on_delivery">الدفع عند الاستلام</string>
+    <string name="pay_by_cash_once_you_receive_your_materials_a_small_surcharge_may_apply">الدفع نقداً بمجرد استلام طلبك. قد يتم تطبيق رسوم إضافية</string>
+    <string name="to_carry_out_inspection">البدء بعملية التقييم في الموقع الذي قمت باختياره</string>
+    <string name="invalid_offer_selection">لقد قمت باختيار عرض غير صحيح</string>
+    <string name="the_service_is_not_available_in_your_city_or_there_is_an_error_confirming_booking_please_call_us_at_97143958183_to_book_the_service_thank_you">يؤسفنا إعلامك بأن الخدمة غير متاحة في مدينتك أو أن هناك خطأ في تأكيد الطلب. يرجى الاتصال بنا على الرقم 600503323 للإستفسار. شكراً لك</string>
+    <string name="enter_complain_desc">أدخل وصف الشكوى</string>
+    <string name="invalid_booking_date">تاريخ الطلب غير صحيح</string>
+    <string name="current_pin_incorrect">كلمة المرور الحالية غير صحيحة ، يرجى إعادة الإدخال</string>
+    <string name="please_enter_a_valid_4_digit">يرجى إدخال كلمة المرور الصحيحة المكونة من 4 أرقام</string>
+    <string name="refer_a_friend">مشاركة التطبيق مع الآخرين</string>
+    <string name="customer_reviews">آراء العملاء</string>
+    <string name="value">القيمة:</string>
+    <string name="enter_first_name">أدخل الاسم الأول</string>
+    <string name="enter_last_name">أدخل اسم العائلة</string>
+    <string name="enter_a_valid_mobile_number">يرجى إدخال رقم هاتف محمول صحيح</string>
+    <string name="enter_a_valid_email_address">يرجى إدخال عنوان بريد إلكتروني صحيح</string>
+    <string name="enter_4_digit_pin">يرجى إدخال كلمة المرور الصحيحة المكونة من 4 أرقام</string>
+    <string name="invalid_email_address">عنوان البريد الإلكتروني غير صحيح</string>
+    <string name="enter_mobile_number">يرجى إدخال رقم الهاتف المحمول</string>
+
+    <string name="there_are_no_bookings_currently_available">لا توجد حجوزات متاحة حاليا.</string>
+    <string name="notification_detail">تفاصيل الإخطار</string>
+    <string name="resend_otp_in_seconds1">سينتهي خلال  %1$d ثواني</string>
+    <string name="resend_otp_in_seconds">OTP مستاء في %1$d ثواني</string>
+    <string name="order_detail">تفاصيل الطلب</string>
+    <string name="enter_few_comments_about_your">يرجى تقييم تجربتك مع مزود الخدمة</string>
+    <string name="redeem_voucher">استبدال القسيمة</string>
+    <string name="enter_order_number_and_vendor_pin_to_redeem_voucher">أدخل رقم الطلب ورقم العميل لاستبدال القسيمة </string>
+    <string name="enter_order_id">أدخل معرف الطلب</string>
+    <string name="enter_vendor_pin">أدخل رقم التعريف الشخصي للعميل</string>
+    <string name="please_enter_orderid">يرجى إدخال معرف الطلب</string>
+    <string name="please_enter_4_digit_vendor_pin">أدخل رقم التعريف الشخصي للعميل</string>
+    <string name="no_items_found_for_the_current_search">لم يتم العثور على عناصر للبحث الحالي</string>
+    <string name="enter_item_keyword_to_search">أدخل كلمة البحث</string>
+</resources>
+
+

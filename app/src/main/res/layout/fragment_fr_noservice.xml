@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="layout.fr_noservice">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/emptyshop"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/shopempty" />
+
+        <TextView
+            android:id="@+id/labelor"
+            android:layout_width="300dp"
+            android:layout_height="127dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:lines="5"
+            android:text="@string/the_service_is_not_available_in_your_city_or_there_is_an_error_confirming_booking_please_call_us_at_97143958183_to_book_the_service_thank_you"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextDark"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btnretry"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorButton"
+            android:gravity="center"
+            android:text="@string/home"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        card_view:cardCornerRadius="0dp"
+        card_view:contentPadding="3dp">
+
+    <RelativeLayout
+        android:id="@+id/l11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/l1"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/listImage"
+                android:layout_width="83dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/haal_meer_large" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/l2"
+            android:layout_below="@id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/itemname"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/itemqty"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="30dp"
+                android:textSize="12dp"
+                android:textStyle="normal"
+                android:textAlignment="center"
+                android:text="Price: AED 0"
+                android:layout_below="@id/itemname"
+                android:textColor="@color/colorPrimary"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/l3"
+            android:layout_below="@id/l2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:background="@color/white"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/itemcartbtn"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:tint="@color/colorButton"
+                android:src="@drawable/ic_tab_shoppingcart"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/changeinfo"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/minus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@layout/round_button"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_tab_minus_green"
+                    android:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/numqty"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@id/minus"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/plus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/totprice"
+                    android:layout_toRightOf="@id/numqty"
+                    android:background="@layout/round_button"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_tab_plus_green"
+                    android:tint="@color/white" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    <TextView
+        android:id="@+id/unitprice"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="12dp"
+        android:textStyle="normal"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/itemcode"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="12dp"
+        android:textStyle="normal"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/totprice"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="12dp"
+        android:textStyle="normal"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"/>
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

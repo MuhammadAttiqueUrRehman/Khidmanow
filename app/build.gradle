@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.aic.khidmanow"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 10
+        versionName "Version 2.02"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+    }
+    namespace 'com.aic.khidmanow'
+
+}
+
+configurations {
+    all*.exclude group: 'com.android.support', module: 'support-v13'
+}
+
+dependencies {
+    implementation 'com.google.android.libraries.places:places:3.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.8.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.github.dbachelder:CreditCardEntry:1.4.9'
+   // implementation 'com.facebook.android:facebook-login:7.1.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.13'
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    //Recycler View
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    //Cardview
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-analytics:17.0.0'
+
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.firebase:firebase-messaging:20.2.3'
+    implementation 'com.google.firebase:firebase-dynamic-links:19.1.0'
+    implementation 'com.paytabs:payment-sdk:6.4.4'
+    implementation 'com.github.bachors:Android-Prefix-Input:1.0'
+
+//    implementation 'com.github.prolificinteractive:material-calendarview:2.0.1'
+}
+// com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
+googleServices { disableVersionCheck = true }

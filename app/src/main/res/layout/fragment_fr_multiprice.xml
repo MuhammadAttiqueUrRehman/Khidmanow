@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="layout.fr_multiprice">
+
+    <include
+        android:id="@+id/tbActivityMain"
+        layout="@layout/toolbarsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/v_steps"
+        layout="@layout/steps"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/tbActivityMain"
+        android:layout_marginTop="8dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonplace"
+        android:layout_below="@id/v_steps"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:padding="10dp"
+        card_view:cardCornerRadius="0dp"
+        card_view:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/quest1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/type_of_job"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorButton"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quest1"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/multilist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/emptycart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/emptyshop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/shopempty" />
+
+            <TextView
+                android:id="@+id/labelor"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:lines="2"
+                android:text="@string/unable_to_retrieve_item_list_please_try_again_later"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnnext"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+</RelativeLayout>

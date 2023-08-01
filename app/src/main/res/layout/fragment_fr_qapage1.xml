@@ -1,0 +1,280 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="layout.fr_qapage1">
+
+    <include
+        android:id="@+id/tbActivityMain"
+        layout="@layout/toolbarsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/v_steps"
+        layout="@layout/steps"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/tbActivityMain"
+        android:layout_marginTop="8dp" />
+
+    <!--<LinearLayout
+        android:id="@+id/v_steps"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/tbActivityMain"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:weightSum="5">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_step_done" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2sp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_step" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2sp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_step" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2sp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_step" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2sp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_step" />
+    </LinearLayout>-->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnnext"
+        android:layout_below="@id/v_steps"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        card_view:cardCornerRadius="0dp"
+        card_view:contentPadding="10dp">
+
+        <ScrollView
+            android:id="@+id/accscroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:id="@+id/lina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/lin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/quest1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clipToPadding="false"
+                        android:listSelector="@android:color/transparent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayBG" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/quest2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clipToPadding="false"
+                        android:listSelector="@android:color/transparent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayBG" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/quest3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clipToPadding="false"
+                        android:listSelector="@android:color/transparent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayBG" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/quest4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clipToPadding="false"
+                        android:listSelector="@android:color/transparent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayBG" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/quest5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clipToPadding="false"
+                        android:listSelector="@android:color/transparent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayBG" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorButton"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+</RelativeLayout>

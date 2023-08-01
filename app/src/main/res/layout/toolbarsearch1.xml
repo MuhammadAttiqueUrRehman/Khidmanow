@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/toolbar_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_collapseMode="pin"
+        android:background="@color/colorPrimaryDark"
+        app:titleTextAppearance="@style/toolBarText"
+        app:subtitleTextAppearance="@style/toolBarSubText">
+
+       <!-- <RelativeLayout
+            android:layout_gravity="right|end|top"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+            <ImageButton
+                android:id="@+id/btncart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:padding="5dp"
+                android:src="@drawable/ic_tab_shoppingcart"
+                android:tint="@color/white" >
+            </ImageButton>
+
+            <TextView
+                android:id="@+id/cart_badge"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@layout/badge_background"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/white"
+                android:text="0"
+                android:textSize="10sp"/>
+        </RelativeLayout>-->
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/search_view"
+        android:hint="@string/enter_item_keyword_to_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</FrameLayout>

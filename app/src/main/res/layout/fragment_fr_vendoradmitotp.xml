@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="layout.fr_vendoradmitotp">
+
+    <include
+        android:id="@+id/tbActivityMain"
+        layout="@layout/toolbarsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerVertical="true" />
+
+
+    <TextView
+        android:id="@+id/labelor"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/tbActivityMain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:lines="2"
+        android:text="@string/please_enter_4_digit_number_from_vendor"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextDark"
+        android:textSize="14dp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:id="@+id/loginpart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/txtvalidationcode"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelor"
+            android:layout_marginTop="20dp"
+            android:hint="@string/_4_digit_permission_code"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColorHint="@color/hintcolor"
+            android:textDirection="ltr"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnvalidate"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/loginpart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorButton"
+        android:gravity="center"
+        android:text="@string/validate"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar9"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+

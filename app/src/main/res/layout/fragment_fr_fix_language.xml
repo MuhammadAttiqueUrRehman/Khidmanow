@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="layout.fr_fix_language">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="Select Language\n\nاختار اللغة"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_eng"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:text="English"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:theme="@style/MyRadioButton" />
+
+            <RadioButton
+                android:id="@+id/btn_ar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="عربى"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:theme="@style/MyRadioButton" />
+
+        </RadioGroup>
+
+        <android.widget.Button
+            android:id="@+id/okbutton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/btn_round_cream_filled"
+            android:text="@string/ok"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

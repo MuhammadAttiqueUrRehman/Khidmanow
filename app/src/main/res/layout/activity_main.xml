@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/main_coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:fitsSystemWindows="true">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_0"
+            android:name="layout.fr_blank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <!-- Main content -->
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/footerx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimaryDark"
+            app:itemIconTint="@drawable/bottom_nav_selector"
+            app:itemTextColor="@color/white"
+            app:labelVisibilityMode="labeled"
+            app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+            app:menu="@menu/bottom_navigation" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:elevation="5dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

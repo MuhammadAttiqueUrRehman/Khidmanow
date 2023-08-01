@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="layout.fr_homepage">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ico_search"
+        android:title="Search"
+        android:visible="false"
+        app:showAsAction="always" />
+    <!--    android:orderInCategory="100"-->
+
+    <item
+        android:id="@+id/action_language"
+        android:title="@string/language_name"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_call"
+        android:icon="@drawable/ico_call"
+        android:title="Customer Care"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ico_share"
+        android:title="Share"
+        app:showAsAction="ifRoom" />
+
+
+</menu>
+

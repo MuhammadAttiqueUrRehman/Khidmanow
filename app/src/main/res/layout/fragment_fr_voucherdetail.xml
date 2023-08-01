@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    tools:context="layout.fr_voucherdetail">
+
+    <include
+        android:id="@+id/tbActivityMain"
+        layout="@layout/toolbarsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/accscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tbActivityMain"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/fillcart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/imageholder"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/detailimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/haal_meer_large" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/gradient" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp" />
+
+                    <TextView
+                        android:id="@+id/itemname"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/category"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Switch
+                android:id="@+id/switchtc"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/i_accept_below_terms_amp_conditions_for_the_offer"
+                android:textColor="@color/colorButton" />
+
+            <Button
+                android:id="@+id/btnactivate"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorButton"
+                android:text="@string/activate_voucher"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/servicedetail"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/description"
+                android:textColor="@color/colorTextDark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/itemdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:lineSpacingMultiplier="1.3"
+                android:padding="10dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorTextDark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/detdescription"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/details"
+                android:textColor="@color/colorTextDark"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/vouchercode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@color/white"
+                android:lineSpacingMultiplier="1.3"
+                android:padding="5dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorTextDark"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/expiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@color/white"
+                android:lineSpacingMultiplier="1.3"
+                android:padding="5dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorTextDark"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/offervalidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@color/white"
+                android:lineSpacingMultiplier="1.3"
+                android:padding="5dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorTextDark"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/servicepricing"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/terms_conditions"
+                android:textColor="@color/colorTextDark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tandc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:lineSpacingMultiplier="1.3"
+                android:padding="10dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorTextDark"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+</RelativeLayout>
+

@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="layout.fr_book_time">
+
+    <include
+        android:id="@+id/tbActivityMain"
+        layout="@layout/toolbarsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/v_steps"
+        layout="@layout/steps"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/tbActivityMain"
+        android:layout_marginTop="8dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonplace"
+        android:layout_below="@id/v_steps"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:elevation="10dp"
+        card_view:cardCornerRadius="0dp"
+        card_view:contentPadding="10dp">
+
+        <ScrollView
+            android:id="@+id/accscroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:id="@+id/placeoption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/addlabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/label1"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/address_landmark"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="10sp"
+                        android:textStyle="normal" />
+
+
+                    <EditText
+                        android:id="@+id/txtAddinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#f1f1f1"
+                        android:gravity="start"
+                        android:padding="3dp"
+                        android:textColor="@color/colorTextDark"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp"
+                        tools:capitalize="sentences"
+                        tools:drawableBottom="1" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/quest1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/select_appointment_slot"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:id="@+id/addressset"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <CalendarView
+                        android:id="@+id/cv_appoint_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/addressloc"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:enabled="false"
+                        android:hint="@string/select_appointment_date"
+                        android:paddingEnd="30dp"
+                        android:textColorHint="@color/hintcolor"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:id="@+id/btnlocation"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_toEndOf="@id/addressloc"
+                        android:background="@color/colorButton"
+                        android:gravity="center"
+                        android:src="@drawable/ic_calender" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/appsch"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/servicedetail"
+                        android:layout_marginStart="15dp"
+                        android:background="@color/white"
+                        android:clipToPadding="false"
+                        android:listSelector="@android:color/transparent" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/buttonplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnnext"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".45"
+            android:background="@color/colorButton"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar4a"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@color/backgroundBeige"
+        android:backgroundTintMode="src_over"
+        android:elevation="20dp"
+        android:visibility="invisible" />
+</RelativeLayout>

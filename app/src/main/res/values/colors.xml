@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4bd6c0</color>
+    <color name="colorPrimaryDark">#4bd6c0</color>
+    <color name="colorAccent">#285599</color>
+    <color name="colorButton">#4bd6c0</color>
+    <color name="colorTextDark">#4e5053</color>
+    <color name="colorTextWhite">#ffffff</color>
+    <color name="textcolor2">#388e3c</color>
+
+    <color name="dot_dark_screen1">#b2102f</color>
+    <color name="dot_dark_screen2">#b2102f</color>
+    <color name="dot_dark_screen3">#b2102f</color>
+    <color name="dot_dark_screen4">#b2102f</color>
+    <color name="dot_dark_screen5">#b2102f</color>
+
+    <color name="dot_light_screen1">#ffffff</color>
+    <color name="dot_light_screen2">#ffffff</color>
+    <color name="dot_light_screen3">#ffffff</color>
+    <color name="dot_light_screen4">#ffffff</color>
+    <color name="dot_light_screen5">#ffffff</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="grayBG">#e2e2e2</color>
+    <color name="black">#000000</color>
+    <color name="hintcolor">#8d8993</color>
+    <color name="colorGreen">#17be2f</color>
+    <color name="backgroundBeige">#fafafa</color>
+    <color name="greyText">#999999</color>
+
+    <color name="cancel">#D50000</color>
+    <color name="request">#2196F3</color>
+    <color name="profile">#673AB7</color>
+    <color name="reject">#212121</color>
+    <color name="close">#607D8B</color>
+    <color name="complain">#03A9F4</color>
+    <color name="inactive">#B0BEC5</color>
+
+    <array name="active_dot">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen5</item>
+        <item>@color/dot_light_screen5</item>
+    </array>
+
+    <array name="inactive_dot">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen5</item>
+        <item>@color/dot_dark_screen5</item>
+    </array>
+
+</resources>
+
+

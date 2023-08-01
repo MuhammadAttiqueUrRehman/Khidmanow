@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:crosslight="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/listll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        card_view:cardCornerRadius="0dp"
+        card_view:contentPadding="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/listImage"
+                android:layout_width="125dp"
+                android:layout_height="90dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/haal_meer_large" />
+
+            <TextView
+                android:id="@+id/itemname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_toEndOf="@id/listImage"
+                android:paddingStart="8dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="8dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorTextDark"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/categoryname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemname"
+                android:layout_toEndOf="@id/listImage"
+                android:paddingStart="8dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="8dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorTextDark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unitprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/categoryname"
+                android:layout_toEndOf="@id/listImage"
+                android:paddingStart="8dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="8dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorTextDark"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

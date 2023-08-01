@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    tools:context="layout.fr_register">
+
+    <include
+        android:id="@+id/tbActivityMain"
+        layout="@layout/toolbarsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerVertical="true" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tbActivityMain"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        card_view:cardCornerRadius="0dp"
+        card_view:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ScrollView
+                android:id="@+id/accscroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:background="@color/white"
+                android:fillViewport="true"
+                android:scrollbars="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/logpart2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/loginpart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+
+                            <EditText
+                                android:id="@+id/txtfirstname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/enter_first_name"
+                                android:layout_marginTop="10dp"
+                                android:inputType="textCapWords"
+                                android:maxLength="40"
+                                android:textColorHint="@color/hintcolor"
+                                android:textSize="14dp" />
+
+
+                            <EditText
+                                android:id="@+id/txtlastname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/enter_last_name"
+                                android:layout_below="@id/txtfirstname"
+                                android:layout_marginTop="10dp"
+                                android:inputType="textCapWords"
+                                android:maxLength="40"
+                                android:textColorHint="@color/hintcolor"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtmobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txtlastname"
+                                android:layout_marginTop="10dp"
+                                android:inputType="number"
+                                android:hint="@string/enter_mobile_number"
+                                android:maxLength="12"
+                                android:textColorHint="@color/hintcolor"
+                                android:textDirection="ltr"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtemail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txtmobile"
+                                android:layout_marginTop="10dp"
+                                android:inputType="textEmailAddress"
+                                android:maxLength="60"
+                                android:hint="@string/email_address"
+                                android:textColorHint="@color/hintcolor"
+                                android:textDirection="ltr"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/txtnewpin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txtemail"
+                                android:layout_marginTop="10dp"
+                                android:inputType="numberPassword"
+                                android:maxLength="4"
+                                android:hint="@string/enter_4_digit_pin"
+                                android:textColorHint="@color/hintcolor"
+                                android:textDirection="ltr"
+                                android:textSize="14dp" />
+
+
+                        <TextView
+                            android:id="@+id/labelor"
+                            android:layout_width="250dp"
+                            android:layout_height="20dp"
+                            android:layout_below="@id/txtnewpin"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/all_fields_are_required"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/hintcolor"
+                            android:textSize="10dp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/loginpart1"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/loginpart"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/switchtc"
+                            android:layout_width="250dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:text="@string/accept_terms_amp_conditions"
+                            android:textColor="@color/colorButton" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btncreateaccount"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/loginpart1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorButton"
+                        android:gravity="center"
+                        android:text="@string/continue_"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressBar11"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+

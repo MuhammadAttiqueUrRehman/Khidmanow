@@ -1,0 +1,295 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="layout.fr_checkout">
+
+
+    <include
+        android:id="@+id/tbActivityMain"
+        layout="@layout/toolbarsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/totalamount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/tbActivityMain"
+        android:background="@color/colorButton"
+        android:padding="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="normal" />
+
+    <RelativeLayout
+        android:id="@+id/rl_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalamount"
+        android:background="@drawable/rounded_notification_head"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_close"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@+id/tv_noti_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:padding="4dp"
+            app:srcCompat="@drawable/ic_close" />
+
+        <TextView
+            android:id="@+id/tv_noti_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/iv_close"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:text="@ string/app_name string"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/accscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_notification"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimary"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/fillcart"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/pay4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/paytmholder"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/imgcard"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_visa" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/desccard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@id/paytmholder"
+                    android:padding="5dp"
+                    android:text="@string/pay_by_credit_card"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/namecard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/desccard"
+                    android:layout_toEndOf="@id/paytmholder"
+                    android:padding="5dp"
+                    android:text="@string/pay_using_debit_or_credit_card_and_get_warranty_for_the_services"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:id="@+id/balcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/namecard"
+                    android:layout_toEndOf="@id/paytmholder"
+                    android:padding="5dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/balcard"
+                    android:background="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/walletholder"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/imgwallet"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/walletpay" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/descwallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@id/walletholder"
+                    android:padding="5dp"
+                    android:text="@string/pay_by_wallet"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/namewallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/descwallet"
+                    android:layout_toEndOf="@id/walletholder"
+                    android:padding="5dp"
+                    android:text="@string/pay_using_khidmanow_wallet_get_more_rewards_and_benefits"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/balwallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/namewallet"
+                    android:layout_toEndOf="@id/walletholder"
+                    android:padding="5dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/balwallet"
+                    android:background="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pay3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/cashholder"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/imgcash"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/cashpay" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/desccash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@id/cashholder"
+                    android:padding="5dp"
+                    android:text="@string/cash_on_delivery"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/namecash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/desccash"
+                    android:layout_toEndOf="@id/cashholder"
+                    android:padding="5dp"
+                    android:text="@string/pay_by_cash_once_you_receive_your_materials_a_small_surcharge_may_apply"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:id="@+id/balcash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/namecash"
+                    android:layout_toEndOf="@id/cashholder"
+                    android:padding="5dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/balcash"
+                    android:background="@color/colorPrimary" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar20"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+</RelativeLayout>
