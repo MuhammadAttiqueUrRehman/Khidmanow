@@ -47,6 +47,7 @@ public class Album {
 
 
 
+
     public String getUrl(){
         return url;
     }
