@@ -45,7 +45,7 @@ public class Album {
         this.numOfItems=numOfItems;
     }
 
-short;
+
 
 
     public String getUrl(){
