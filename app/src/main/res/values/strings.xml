@@ -1,5 +1,5 @@
 <resources>
-    <string name="default_notification_channel_id" translatable="false">KHIDMANOW</string>
+    <string name="default_notification_channel_id" translatable="false">KhidmaNow</string>
     <string name="app_name" translatable="false">KhidmaNow</string>
     <string name="app_title">KhidmaNow</string>
     <string name="Rs">AED</string>

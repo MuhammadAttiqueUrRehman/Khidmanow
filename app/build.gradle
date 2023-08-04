@@ -60,11 +60,15 @@ dependencies {
     implementation 'com.google.android.gms:play-services-analytics:17.0.0'
 
     implementation 'com.google.android.material:material:1.0.0'
-    implementation 'com.google.firebase:firebase-messaging:20.2.3'
     implementation 'com.google.firebase:firebase-dynamic-links:19.1.0'
     implementation 'com.paytabs:payment-sdk:6.4.4'
     implementation 'com.github.bachors:Android-Prefix-Input:1.0'
 
+
+    implementation 'androidx.work:work-runtime:2.7.1'
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    implementation('com.google.firebase:firebase-iid:21.1.0')
+    implementation platform('com.google.firebase:firebase-bom:31.1.0')
 //    implementation 'com.github.prolificinteractive:material-calendarview:2.0.1'
 }
 // com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
