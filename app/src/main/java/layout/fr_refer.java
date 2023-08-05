@@ -85,7 +85,8 @@ public class fr_refer extends Fragment implements AsyncResponse {
         try {
             jsonMain.put("merchantcode", HMConstants.appmerchantid);
             jsonMain.put("mdevice", intromanager.getDevice());
-            jsonMain.put("reference", HMConstants.contactUS);
+            jsonMain.put("reference", HMConstants.shareapp);
+            //jsonMain.put("reference", HMConstants.contactUS);
             jsonParam.put("indata", jsonMain);
         } catch (JSONException e) {
             e.printStackTrace();
@@ -116,7 +117,7 @@ public class fr_refer extends Fragment implements AsyncResponse {
                         .setLink(Uri.parse(mlink))
                         .setDynamicLinkDomain(HMConstants.pagelink)
                         .setIosParameters(
-                                new DynamicLink.IosParameters.Builder("com.aicios.ikhidmanow")
+                                new DynamicLink.IosParameters.Builder("com.aicios.khidmanow")
                                         .setAppStoreId(intromanager.getIOSStoreURL())
                                         .setMinimumVersion("1")
                                         .build())

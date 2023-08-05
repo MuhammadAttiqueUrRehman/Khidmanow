@@ -88,5 +88,7 @@ public class HMConstants {
     public static final String mobilePrefix = "+971";
     public static final String pagelink = "khidmanow.page.link";
     public static final String imagetype = "data:image/jpg;base64,";
+
+    public static final String shareapp = "121072019000008";
     public static final String apikey = "AIzaSyBWi_EXzaQXv9fjf6AwYki7sI8_btueMmg";
 }

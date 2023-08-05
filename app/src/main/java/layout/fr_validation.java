@@ -47,6 +47,8 @@ public class fr_validation extends Fragment implements AsyncResponse {
     private TextView mTitle;
     IntroManager intromanager;
 
+    CountDownTimer timer;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -138,23 +140,8 @@ public class fr_validation extends Fragment implements AsyncResponse {
         btnresendcode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //myDB.showToast(requireContext(), "clicked");
-                tv_timer.setVisibility(View.VISIBLE);
-                btnresendcode.setVisibility(View.GONE);
-                new CountDownTimer(180000, 1000) {
+             resendOTP();
 
-                    public void onTick(long millisUntilFinished) {
-                        tv_timer.setText(getString(R.string.resend_otp_in_seconds1, millisUntilFinished / 1000));
-                        //here you can have your logic to set text to edittext
-                    }
-
-                    public void onFinish() {
-//                mTextField.setText("done!");
-                        tv_timer.setVisibility(View.GONE);
-                        btnresendcode.setVisibility(View.VISIBLE);
-                    }
-
-                }.start();
                 JSONObject jsonParam = new JSONObject();
                 JSONObject jsonMain = new JSONObject();
                 try {
@@ -182,25 +169,27 @@ public class fr_validation extends Fragment implements AsyncResponse {
                 }
             }
         });
-        tv_timer.setVisibility(View.VISIBLE);
-        btnresendcode.setVisibility(View.GONE);
-        new CountDownTimer(30000, 1000) {
-
-            public void onTick(long millisUntilFinished) {
-                tv_timer.setText(getString(R.string.resend_otp_in_seconds1, millisUntilFinished / 1000));
-                //here you can have your logic to set text to edittext
-            }
-
-            public void onFinish() {
-//                mTextField.setText("done!");
-                tv_timer.setVisibility(View.GONE);
-                btnresendcode.setVisibility(View.VISIBLE);
-            }
-
-        }.start();
+        resendOTP();
 
         return v;
     }
+
+    private void resendOTP() {
+        timer = new CountDownTimer(180000, 1000) {
+
+            public void onTick(long millisUntilFinished) {
+                tv_timer.setVisibility(View.VISIBLE);
+                btnresendcode.setVisibility(View.GONE);
+                tv_timer.setText(getString(R.string.resend_otp_in_seconds1, millisUntilFinished / 1000));
+            }
+
+            public void onFinish() {
+                tv_timer.setVisibility(View.GONE);
+                btnresendcode.setVisibility(View.VISIBLE);
+            }
+        }.start();
+    }
+
 
     @Override
     public void processFinish(String output, String handle) throws HMOwnException, JSONException {
@@ -222,6 +211,9 @@ public class fr_validation extends Fragment implements AsyncResponse {
                 return;
             } else {
                 if (!strisnew.equals("Y")) {
+                    if (timer!=null){
+                        timer.cancel();
+                    }
                     Fragment myFragment = new fr_reset_pin();
                     getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_0, myFragment).addToBackStack(null).commitAllowingStateLoss();
                 } else {
@@ -242,8 +234,10 @@ public class fr_validation extends Fragment implements AsyncResponse {
                 myDB.showToast(getActivity(), statusdesckey);
                 return;
             } else {
+                if (timer!=null){
+                    timer.cancel();
+                }
                 Bundle bundle = new Bundle();
-
                 bundle.putString("strmobile", strmobile);
                 bundle.putString("strpin", strpin);
                 bundle.putString("strfbid", strfbid);
