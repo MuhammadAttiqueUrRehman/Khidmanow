@@ -11,7 +11,7 @@ android {
         applicationId "com.aic.khidmanow"
         minSdkVersion 21
         targetSdkVersion 33
-        versionCode 10
+        versionCode 11
         versionName "Version 2.02"
         multiDexEnabled true
     }
